@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{item.title}} | FileStream</title><style>
+*{box-sizing:border-box}body{margin:0;background:#050817;color:#f5f6fb;font:16px system-ui}header{padding:20px 6%;border-bottom:1px solid #263149;font-size:25px;font-weight:850;color:#ff667d}main{max-width:900px;margin:28px auto;padding:0 15px}.player{width:100%;aspect-ratio:16/9;background:#000;border-radius:15px}.card{margin-top:18px;padding:22px;background:#0e1628;border:1px solid #263149;border-radius:18px}h1{overflow-wrap:anywhere;font-size:clamp(20px,4vw,32px)}.btn{display:block;text-align:center;padding:14px;margin-top:11px;border-radius:11px;background:#25334b;color:white;text-decoration:none;font-weight:700}.primary{background:linear-gradient(90deg,#f33762,#e7194e)}.ad{margin:16px 0;min-height:0;text-align:center}.muted{color:#aab4c8;font-size:13px;margin-top:16px}
+</style></head><body><header>FileStream Pro</header><main>
+<div class="ad">{{ ad_code|safe }}</div>
+<video class="player" controls playsinline preload="metadata" src="{{media_url}}"></video>
+<section class="card"><h1>{{item.title}}</h1>
+<a class="btn primary" href="{{download_url}}">⬇ Download</a>
+<a class="btn" href="vlc://{{media_url}}">🟠 VLC Player</a>
+<a class="btn" href="intent:{{media_url}}#Intent;package=com.mxtech.videoplayer.ad;end">🔵 MX Player</a>
+<a class="btn" href="{{media_url}}" target="_blank" rel="noopener">More Players / Open source</a>
+<div class="ad">{{ ad_code|safe }}</div>
+<p class="muted">Browser codec support varies. External players may be needed for E-AC3 audio. Only authorized files should be shared.</p>
+</section></main></body></html>
